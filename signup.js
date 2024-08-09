@@ -19,10 +19,7 @@ const signup = () => {
 
   async function getUser() {
     try {
-      const configResponse = await fetch("/config.json");
-      const config = await configResponse.json();
-      const API_URL = config.API_URL;
-      const res = await fetch(`${API_URL}/register`, {
+      const res = await apiFetch(`${API_URL}/register`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

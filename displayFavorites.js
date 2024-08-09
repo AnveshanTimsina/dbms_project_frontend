@@ -2,10 +2,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const user = JSON.parse(localStorage.getItem("user"));
   const userId = user.user_id;
   try {
-    const configResponse = await fetch("/config.json");
-    const config = await configResponse.json();
-    const API_URL = config.API_URL;
-    const res = await fetch(`${API_URL}/favorite/${userId}/getFavorites`);
+    const res = await apiFetch(`favorite/${userId}/getFavorites`);
     const data = await res.json();
 
     if (data.success) {
@@ -43,7 +40,7 @@ document.addEventListener("DOMContentLoaded", async () => {
           if (!this.checked) {
             const productId = this.getAttribute("data-product-id");
             try {
-              const res = await fetch(
+              const res = await apiFetch(
                 `${API_URL}/favorite/${userId}/deleteFromFavorites`,
                 {
                   method: "DELETE",

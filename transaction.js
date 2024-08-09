@@ -1,9 +1,7 @@
 // // async function handleBuyNow(productId) {
 // //   try {
-// const configResponse = await fetch("/config.json");
-// const config = await configResponse.json();
-// const API_URL = config.API_URL;
-// //     const res = await fetch(
+//
+// //     const res = await apiFetch(
 // //       `${API_URL}/transaction/:uid/addTransaction`,
 // //       {
 // //         method: "POST",
@@ -46,7 +44,7 @@
 //     const productId = this.getAttribute("data-product-id");
 
 //     try {
-//       const res = await fetch(
+//       const res = await apiFetch(
 //         `${API_URL}/transaction/${userId}/addTransaction`,
 //         {
 //           method: "POST",

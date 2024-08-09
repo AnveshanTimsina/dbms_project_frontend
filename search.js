@@ -15,10 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     try {
-      const configResponse = await fetch("/config.json");
-      const config = await configResponse.json();
-      const API_URL = config.API_URL;
-      const res = await fetch(`${API_URL}/product/searchProducts`, {
+      const res = await apiFetch(`${API_URL}/product/searchProducts`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

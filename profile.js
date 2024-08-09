@@ -3,10 +3,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const userId = user.user_id;
 
   try {
-    const configResponse = await fetch("/config.json");
-    const config = await configResponse.json();
-    const API_URL = config.API_URL;
-    const res = await fetch(`${API_URL}/user/${userId}`);
+    const res = await apiFetch(`${API_URL}/user/${userId}`);
     const data = await res.json();
 
     if (data.success) {

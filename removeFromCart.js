@@ -14,10 +14,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const productId = this.getAttribute("data-product-id");
 
     try {
-      const configResponse = await fetch("/config.json");
-      const config = await configResponse.json();
-      const API_URL = config.API_URL;
-      const res = await fetch(
+      const res = await apiFetch(
         `${API_URL}/cart/${userId}/deleteProductFromCart`,
         {
           method: "DELETE",

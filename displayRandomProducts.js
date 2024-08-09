@@ -3,10 +3,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   const userId = user.user_id;
 
   try {
-    // const configResponse = await fetch("/config.json");
-    // const config = await configResponse.json();
-    // const API_URL = config.API_URL;
-
     const res = await apiFetch(`product/${userId}/randomProducts`);
     const data = await res.json();
 
@@ -44,7 +40,7 @@ document.addEventListener("DOMContentLoaded", async () => {
           const productId = this.getAttribute("data-product-id");
           try {
             if (this.checked) {
-              const res = await fetch(
+              const res = await apiFetch(
                 `${API_URL}/favorite/${userId}/addToFavorites`,
                 {
                   method: "POST",
@@ -82,7 +78,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                 favoriteList.appendChild(favoriteItem);
               } else {
                 try {
-                  const res = await fetch(
+                  const res = await apiFetch(
                     `${API_URL}/favorite/${userId}/deleteFromFavorites`,
                     {
                       method: "DELETE",

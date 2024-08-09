@@ -22,10 +22,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const userId = user.user_id;
 
     try {
-      const configResponse = await fetch("/config.json");
-      const config = await configResponse.json();
-      const API_URL = config.API_URL;
-      const res = await fetch(`${API_URL}/product/${userId}/addNewProduct`, {
+      const res = await apiFetch(`${API_URL}/product/${userId}/addNewProduct`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

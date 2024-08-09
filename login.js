@@ -11,10 +11,7 @@ const login = () => {
 
   async function getUser() {
     try {
-      const configResponse = await fetch("/config.json");
-      const config = await configResponse.json();
-      const API_URL = config.API_URL;
-      const res = await fetch(`${API_URL}/login`, {
+      const res = await apiFetch(`${API_URL}/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
