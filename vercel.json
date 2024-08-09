@@ -15,8 +15,7 @@
       },
       {
         "src": "*.js",
-        "use": "@vercel/static",
-        "exclude": ["api.js"]
+        "use": "@vercel/static"
       }
     ],
     "routes": [
