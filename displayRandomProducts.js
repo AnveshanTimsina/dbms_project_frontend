@@ -3,10 +3,11 @@ document.addEventListener("DOMContentLoaded", async () => {
   const userId = user.user_id;
 
   try {
-    const configResponse = await fetch("/config.json");
-    const config = await configResponse.json();
-    const API_URL = config.API_URL;
-    const res = await fetch(`${API_URL}/product/${userId}/randomProducts`);
+    // const configResponse = await fetch("/config.json");
+    // const config = await configResponse.json();
+    // const API_URL = config.API_URL;
+
+    const res = await apiFetch(`product/${userId}/randomProducts`);
     const data = await res.json();
 
     if (data.success) {
