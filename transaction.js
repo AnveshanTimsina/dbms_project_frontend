@@ -2,7 +2,7 @@
 // //   try {
 //
 // //     const res = await apiFetch(
-// //       `${API_URL}/transaction/:uid/addTransaction`,
+// //       `transaction/:uid/addTransaction`,
 // //       {
 // //         method: "POST",
 // //         headers: {
@@ -45,7 +45,7 @@
 
 //     try {
 //       const res = await apiFetch(
-//         `${API_URL}/transaction/${userId}/addTransaction`,
+//         `transaction/${userId}/addTransaction`,
 //         {
 //           method: "POST",
 //           headers: {

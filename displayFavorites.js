@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             const productId = this.getAttribute("data-product-id");
             try {
               const res = await apiFetch(
-                `${API_URL}/favorite/${userId}/deleteFromFavorites`,
+                `favorite/${userId}/deleteFromFavorites`,
                 {
                   method: "DELETE",
                   headers: {

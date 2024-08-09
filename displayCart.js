@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const userId = user.user_id;
 
   try {
-    const res = await apiFetch(`${API_URL}/cart/${userId}/readCartItems`);
+    const res = await apiFetch(`cart/${userId}/readCartItems`);
     const data = await res.json();
 
     if (data.success) {

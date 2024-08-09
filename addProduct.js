@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const userId = user.user_id;
 
     try {
-      const res = await apiFetch(`${API_URL}/product/${userId}/addNewProduct`, {
+      const res = await apiFetch(`product/${userId}/addNewProduct`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

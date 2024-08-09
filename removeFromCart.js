@@ -14,16 +14,13 @@ document.addEventListener("DOMContentLoaded", async () => {
     const productId = this.getAttribute("data-product-id");
 
     try {
-      const res = await apiFetch(
-        `${API_URL}/cart/${userId}/deleteProductFromCart`,
-        {
-          method: "DELETE",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ product_id: productId }),
-        }
-      );
+      const res = await apiFetch(`cart/${userId}/deleteProductFromCart`, {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ product_id: productId }),
+      });
       const data = await res.json();
 
       if (data.success) {

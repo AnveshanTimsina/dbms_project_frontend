@@ -19,7 +19,7 @@ const signup = () => {
 
   async function getUser() {
     try {
-      const res = await apiFetch(`${API_URL}/register`, {
+      const res = await apiFetch(`register`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

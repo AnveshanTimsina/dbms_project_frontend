@@ -40,16 +40,13 @@ document.addEventListener("DOMContentLoaded", async () => {
           const productId = this.getAttribute("data-product-id");
           try {
             if (this.checked) {
-              const res = await apiFetch(
-                `${API_URL}/favorite/${userId}/addToFavorites`,
-                {
-                  method: "POST",
-                  headers: {
-                    "Content-Type": "application/json",
-                  },
-                  body: JSON.stringify({ product_id: productId }),
-                }
-              );
+              const res = await apiFetch(`favorite/${userId}/addToFavorites`, {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ product_id: productId }),
+              });
               const result = await res.json();
 
               if (result.success) {
@@ -79,7 +76,7 @@ document.addEventListener("DOMContentLoaded", async () => {
               } else {
                 try {
                   const res = await apiFetch(
-                    `${API_URL}/favorite/${userId}/deleteFromFavorites`,
+                    `favorite/${userId}/deleteFromFavorites`,
                     {
                       method: "DELETE",
                       headers: {

@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     try {
-      const res = await apiFetch(`${API_URL}/product/searchProducts`, {
+      const res = await apiFetch(`product/searchProducts`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

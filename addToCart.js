@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const productId = this.getAttribute("data-product-id");
 
     try {
-      const res = await apiFetch(`${API_URL}/cart/${userId}/addCartItems`, {
+      const res = await apiFetch(`cart/${userId}/addCartItems`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
