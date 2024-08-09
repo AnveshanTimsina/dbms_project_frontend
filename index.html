@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="login.js"></script>
+    <script defer src="title_animation.js"></script>
+    <title>techno-treasure : Log in</title>
+    <link rel="stylesheet" href="login_signup.css" />
+  </head>
+  <body>
+    <div class="full-screen-container">
+      <!-- <div class="logo-image">logo</div> -->
+      <div class="site-title" data-value="techno-treasure">techno-treasure</div>
+      <div class="site-subtitle">money CAN buy happiness!</div>
+      <div class="login-container">
+        <div class="login-container-heading">WELCOME BACK</div>
+        <div class="login-container-subheading">
+          Please enter your information to log in
+        </div>
+        <form action="/login.js" method="post">
+          <input
+            type="username"
+            name="username"
+            id="username"
+            placeholder="Username"
+            required
+          />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+            required
+          />
+          <!-- </form> -->
+          <!-- <div class="input-group">
+            <label for="username">Username</label>
+            <input type="username" name="username" id="username" />
+          </div>
+
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" />
+          </div> -->
+
+          <!-- <div class="user-type-tabs">
+            <input
+              type="radio"
+              name="user-type"
+              id="buyer"
+              value="buyer"
+              checked
+            />
+            <label for="buyer" class="user-type-tab-label">Buyer</label>
+            <input type="radio" name="user-type" id="seller" value="seller" />
+            <label for="seller" class="user-type-tab-label">Seller</label>
+          </div> -->
+
+          <div class="user-type-tabs">
+            <label class="user-type-tab">
+              <input
+                type="radio"
+                name="user-type"
+                id="buyer"
+                value="buyer"
+                checked
+              />
+              <span>Buyer</span>
+            </label>
+            <label class="user-type-tab">
+              <input type="radio" name="user-type" id="seller" value="seller" />
+              <span>Seller</span>
+            </label>
+          </div>
+
+          <div id="login_message"></div>
+          <button type="button" class="login-btn" onclick="login()">
+            Log in
+          </button>
+          <div class="additional-info">
+            <a href="signup.html">New here? Create a new account</a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="footer">
+      <p>© techno-treasure</p>
+    </div>
+  </body>
+</html>

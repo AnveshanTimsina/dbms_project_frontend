@@ -1,0 +1,130 @@
+:root {
+    --prim: #0A2647;
+    --sec: rgba(9, 67, 108, 1);
+    --bg: rgba(240, 242, 245, 1);
+    --red: rgba(190, 0, 51, 1);
+  }
+  
+  body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body stretches to at least the height of the viewport */
+  }
+  
+  header {
+    background-color: var(--prim);
+    padding: 10px 0;
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  header .logo a {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  header nav ul {
+    max-width: 20%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  header nav ul li {
+    margin-left: 20px;
+  }
+  
+  header nav ul li a {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .search-bar {
+    background-color: var(--prim);
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0px;
+  }
+  
+  .search-bar .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+  }
+  
+  .search-bar input[type="text"] {
+    width: 500px;
+    padding: 10px;
+    border: 1px solid rgba(221, 223, 226, 1);
+    border-radius: 6px;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  
+  .search-bar button {
+    padding: 10px 20px;
+    background-color: var(--sec);
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .profile-section {
+    flex: 1; /* Ensures the profile section expands to fill available space */
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  #profile-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  footer {
+    background-color: rgba(240, 242, 245, 0.1);
+    color: #000000;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto; 
+    width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    header nav ul {
+      max-width: 100%;
+      justify-content: space-around;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .search-bar input[type="text"] {
+      width: 100%;
+    }
+  }
+  

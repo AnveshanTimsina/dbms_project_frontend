@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>techno-treasure: Products</title>
+    <script defer src="addProduct.js"></script>
+    <script defer src="logout.js"></script>
+    <link rel="stylesheet" href="addProduct.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="seller.html">techno-treasure</a>
+        </div>
+        <nav>
+          <ul>
+            <section class="search-bar">
+              <div class="container">
+                <input type="text" placeholder="Search for products..." />
+                <button type="submit">Search</button>
+              </div>
+            </section>
+
+            <li><a href="seller.html">Home</a></li>
+            <li><a href="sellerProducts.html">Products</a></li>
+            <li><a href="sellerProfile.html">Profile</a></li>
+            <li><a id="logout" href="index.html">Logout</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section>
+      <h1>Add a New Product</h1>
+      <form id="add-product-form">
+        <div>
+          <label for="product_name">Product Name:</label>
+          <input type="text" id="product_name" name="product_name" required />
+        </div>
+        <div>
+          <label for="product_description">Product Description:</label>
+          <textarea
+            id="product_description"
+            name="product_description"
+            rows="4"
+            required
+          ></textarea>
+        </div>
+        <div>
+          <label for="unit_price">Unit Price:</label>
+          <input
+            type="number"
+            id="unit_price"
+            name="unit_price"
+            step="0.01"
+            required
+          />
+        </div>
+        <div>
+          <label for="stock_quantity">Stock Quantity:</label>
+          <input
+            type="number"
+            id="stock_quantity"
+            name="stock_quantity"
+            required
+          />
+        </div>
+        <button type="submit">Add Product</button>
+      </form>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>© techno-treasure. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,227 @@
+:root{
+  --prim:#0A2647;
+  --sec: rgba(9, 67, 108, 1);
+  --bg:rgba(240, 242, 245, 1);
+  --red: rgba(190,0,51,1);
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(240, 242, 245, 1);
+  }
+  
+  header {
+    background-color: var(--prim);
+    padding: 10px 0;
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  header .logo a {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  header nav ul {
+    max-width: 20%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  header nav ul li {
+    margin-left: 20px;
+  }
+  
+  header nav ul li a {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .search-bar {
+    background-color: var(--prim);
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0px;
+  }
+  
+  .search-bar .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+  }
+  
+  .search-bar input[type="text"] {
+    width: 500px;
+    padding: 10px;
+    border: 1px solid rgba(221, 223, 226, 1);
+    border-radius: 6px;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  
+  .search-bar button {
+    padding: 10px 20px;
+    background-color: var(--sec);
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .featured-products, .favorite-products {
+    padding: 40px 0;
+    background-color: rgba(255, 255, 255, 1);
+  }
+  
+  .featured-products .container, .favorite-products .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .featured-products h2, .favorite-products .h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .product-list, .favorite-product-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .product-item, .favorite-item {
+    background-color: rgba(240, 242, 245, 1);
+    padding: 20px;
+    border-radius: 6px;
+    text-align: center;
+    width: calc(20% - 20px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* .product-item img {
+    max-width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  } */
+  
+  .product-item h3, .favorite-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .product-item p, .favorite-item p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: rgba(28, 30, 33, 1);
+  }
+  
+  .product-item button, .favorite-item button {
+    padding: 10px 20px;
+    background-color: var(--sec);
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  /* here */
+  #search-results-container {
+    padding: 40px 0;
+    background-color: rgba(255, 255, 255, 1);
+    display: none; /* Hide by default */
+  }
+  
+  #search-results-container .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  #search-results-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: var(--prim);
+  }
+  
+  #search-results {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #search-results li {
+    margin-bottom: 10px;
+  }
+  
+  #search-results li a {
+    color: var(--sec);
+    text-decoration: none;
+    font-size: 16px;
+    border-bottom: 1px solid var(--sec);
+    padding-bottom: 5px;
+    display: block;
+  }
+  
+  #search-results li a:hover {
+    color: var(--prim);
+    border-bottom-color: var(--prim);
+  }
+/* here   */
+  
+
+
+/* here fr */
+
+.product-item a, .favorite-item a {
+  color: var(--sec);
+  text-decoration: none;
+  font-size: 18px; 
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+.product-item a:hover, .favorite-item a:hover {
+  color: var(--prim);
+}
+
+
+.product-item h3, .favorite-item h3 {
+  margin: 0;
+}
+
+.product-item p, .favorite-item p {
+  margin: 0;
+}
+
+/* here fr  */
+  footer {
+    background-color: rgba(240, 242, 245, 0.1);
+    color: #000000;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 5px;
+  }
+  

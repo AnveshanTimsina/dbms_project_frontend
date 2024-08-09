@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>techno-treasure: Product's Info</title>
+    <script defer src="displayFavorites.js"></script>
+    <script defer src="displayRandomProducts.js"></script>
+    <script defer src="addToCart.js"></script>
+    <script defer src="logout.js"></script>
+    <script defer src="search.js"></script>
+    <script defer src="productInfo.js"></script>
+    <link rel="stylesheet" href="productInfo.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="buyer.html">techno-treasure</a>
+        </div>
+        <nav>
+          <ul>
+            <section class="search-bar">
+              <div class="container">
+                <input
+                  id="search-input"
+                  type="text"
+                  placeholder="Search for products..."
+                />
+                <button id="search-button" type="submit">Search</button>
+              </div>
+            </section>
+
+            <li><a href="buyer.html">Home</a></li>
+            <li><a href="buyerProducts.html">Products</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="buyerProfile.html">Profile</a></li>
+            <li><a id="logout" href="index.html">Logout</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="product-info">
+      <div class="container">
+        <h1 id="product-name">Loading...</h1>
+        <p id="product-description"></p>
+        <p><strong>Price:</strong> $<span id="product-price"></span></p>
+        <p><strong>Stock Quantity:</strong> <span id="product-stock"></span></p>
+        <h3>Seller Information</h3>
+        <p><strong>Seller Name:</strong> <span id="seller-name"></span></p>
+        <p><strong>Email:</strong> <span id="seller-email"></span></p>
+        <p><strong>Phone:</strong> <span id="seller-phone"></span></p>
+        <p><strong>First Name:</strong> <span id="seller-first-name"></span></p>
+        <p><strong>Last Name:</strong> <span id="seller-last-name"></span></p>
+        <div class="add-to-cart-container">
+          <button id="add-to-cart" type="button">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>© techno-treasure. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

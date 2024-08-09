@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>techno-treasure: Buyer's Homepage</title>
+    <script defer src="displayFavorites.js"></script>
+    <script defer src="displayRandomProducts.js"></script>
+    <script defer src="addToCart.js"></script>
+    <script defer src="logout.js"></script>
+    <script defer src="search.js"></script>
+    <link rel="stylesheet" href="buyer.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="buyer.html">techno-treasure</a>
+        </div>
+        <nav>
+          <ul>
+            <section class="search-bar">
+              <div class="container">
+                <input
+                  id="search-input"
+                  type="text"
+                  placeholder="Search for products..."
+                />
+                <button id="search-button" type="submit">Search</button>
+              </div>
+            </section>
+
+            <li><a href="buyer.html">Home</a></li>
+            <li><a href="buyerProducts.html">Products</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="buyerProfile.html">Profile</a></li>
+            <li><a id="logout" href="index.html">Logout</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="search-results-container" style="display: none">
+      <div class="container">
+        <h2>Search Results</h2>
+        <ul id="search-results"></ul>
+      </div>
+    </section>
+
+    <section class="favorite-products">
+      <div class="container">
+        <h2>Favorties</h2>
+        <ul id="favorite-product-list" class="favorite-product-list"></ul>
+      </div>
+    </section>
+
+    <section class="featured-products">
+      <div class="container">
+        <h2>Featured Products</h2>
+        <ul id="product-list" class="product-list"></ul>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>© techno-treasure. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

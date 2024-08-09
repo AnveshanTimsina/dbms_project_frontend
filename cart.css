@@ -1,0 +1,161 @@
+:root {
+  --prim: #0A2647;
+  --sec: rgba(9, 67, 108, 1);
+  --bg: rgba(240, 242, 245, 1);
+  --red: rgba(190, 0, 51, 1);
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+}
+
+header {
+  background-color: var(--prim);
+  padding: 10px 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header .logo a {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header nav ul {
+  max-width: 20%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.search-bar {
+  background-color: var(--prim);
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0px;
+}
+
+.search-bar .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 0px;
+}
+
+.search-bar input[type="text"] {
+  width: 500px;
+  padding: 10px;
+  border: 1px solid rgba(221, 223, 226, 1);
+  border-radius: 6px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  background-color: var(--sec);
+  color: rgba(255, 255, 255, 1);
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.cart-items {
+  padding: 40px 0;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.cart-items .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.cart-items h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.cart-list {
+  list-style: none;
+  padding: 0;
+}
+
+.cart-item {
+  background-color: var(--bg);
+  padding: 20px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-item h3 {
+  font-size: 18px;
+  margin: 0;
+  display: inline-block;
+}
+
+.cart-item p {
+  font-size: 16px;
+  margin: 10px 0 0 0;
+  color: rgba(28, 30, 33, 1);
+}
+
+.cart-item .cart-actions {
+  display: flex;
+  align-items: center;
+}
+
+.cart-item .cart-actions label {
+  margin-right: 10px;
+}
+
+.cart-item button {
+  padding: 10px 20px;
+  background-color: var(--sec);
+  color: rgba(255, 255, 255, 1);
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: rgba(240, 242, 245, 0.1);
+  color: #000000;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 5px;
+}

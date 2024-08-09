@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>techno-treasure: Seller's Homepage</title>
+    <script defer src="sellerProducts.js"></script>
+    <script defer src="logout.js"></script>
+    <link rel="stylesheet" href="seller.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="seller.html">techno-treasure</a>
+        </div>
+        <nav>
+          <ul>
+            <section class="search-bar">
+              <div class="container">
+                <input type="text" placeholder="Search for products..." />
+                <button type="submit">Search</button>
+              </div>
+            </section>
+
+            <li><a href="seller.html">Home</a></li>
+            <li><a href="sellerProducts.html">Products</a></li>
+            <li><a href="sellerProfile.html">Profile</a></li>
+            <li><a id="logout" href="index.html">Logout</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="my-products">
+      <div class="container">
+        <h2>My Products</h2>
+        <ul id="product-list" class="product-list"></ul>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>© techno-treasure. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
