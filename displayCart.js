@@ -35,6 +35,6 @@ document.addEventListener("DOMContentLoaded", async () => {
       });
     }
   } catch (err) {
-    console.error("Error loading cart items.", err);
+    console.error("Error loading cart items", err);
   }
 });
