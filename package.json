@@ -1,6 +1,0 @@
-{
-   "name": "ecommerce",
-    "scripts":{
-        "build":"node replaceApi.js"
-    }
-}
