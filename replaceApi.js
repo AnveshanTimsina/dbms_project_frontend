@@ -1,3 +1,4 @@
+console.log("Replacing api url");
 const fs = require("fs");
 const path = require("path");
 
@@ -5,7 +6,6 @@ const path = require("path");
 const placeholder = "http://localhost:8000";
 const replacement = process.env.API_URL;
 
-console.log("Replacing api url");
 console.log({ placeholder, replacement });
 
 // Specify the file to process
