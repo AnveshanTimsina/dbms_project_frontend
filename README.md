@@ -73,11 +73,11 @@ Knowing that this was the first project I'd be hosting somewhere other than my o
 
 ## Limitations and Future Enhancement
 
-- This project will use the local storage of the browser to store the user information that it needs to access the cart, user’s favorite products, etc. i.e. information that is user-specific. This is an insecure method of achieving this. Rather, the use of JWTs is recommended which is much more secure and is the industry standard as of now. To avoid extra complexity, this has been neglected. However, this concern can be addressed while making future enhancements to the project.  
+- This project uses the local storage of the browser to store the user information that it needs to access the cart, user’s favorite products, etc. i.e. information that is user-specific. This is an insecure method of achieving this. Rather, the use of JWTs is recommended which is much more secure and is the industry standard as of now. To avoid extra complexity, this has been neglected. However, this concern can be addressed while making future enhancements to the project.  
 
-- As this project will not have cross device integration due to the lack of a smartphone app, it may not provide a seamless experience as the user will be limited to their browser to use this which might not be well optimized for phone screens.  
+- As this project does not have cross device integration due to the lack of a smartphone app, it may not provide a seamless experience as the user will be limited to their browser to use this which might not be well optimized for phone screens as it would be if it had a dedicated mobile app.  
 
-- This project will lack an admin page in the frontend, so the viewing and manipulation of data in the admin level needs to be done by tinkering with the source code which is not the standard practice.  
+- This project lacks an admin page in the frontend, so the viewing and manipulation of data in the admin level needs to be done by tinkering with the source code which is not the standard practice.  
 
 - This project lacks a review feature which I deem to be very important. Users can’t post reviews as of yet. This is to be the first update on the web app in the future.
 
