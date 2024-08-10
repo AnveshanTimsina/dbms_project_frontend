@@ -11,7 +11,7 @@ const login = () => {
 
   async function getUser() {
     try {
-      const res = await apiFetch(`/login`, {
+      const res = await apiFetch(`login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
