@@ -5,6 +5,9 @@ const path = require("path");
 const placeholder = "http://localhost:8000";
 const replacement = process.env.API_URL;
 
+console.log("Replacing api url");
+console.log({ placeholder, replacement });
+
 // Specify the file to process
 const filePath = path.join(__dirname, "api.js");
 let content = fs.readFileSync(filePath, "utf8");
